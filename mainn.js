@@ -74,9 +74,11 @@ function selectPlayer() {
   document.querySelector(".select-player").style.display = "flex";
 }
 
+// selecting the game mode
 playWithCpu.addEventListener("click", selectPlayer);
 playWithFriend.addEventListener("click", selectPlayer);
 
+//function to check if X wins
 checkX.addEventListener("click", function () {
   document.getElementById("Oplayer").disabled = true;
   iconO.style.opacity = "0.5";
@@ -84,6 +86,7 @@ checkX.addEventListener("click", function () {
   go = "cross";
 });
 
+//function to check if player O wins
 checkO.addEventListener("click", function () {
   document.getElementById("Xplayer").disabled = true;
   iconX.style.opacity = "0.5";
@@ -98,6 +101,7 @@ goToGame.addEventListener("click", function (e) {
   document.querySelector(".result-box").style.display = "none";
 });
 
+//function to enter the game mode
 restartGame.addEventListener("click", function () {
   resetBoard();
 });

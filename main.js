@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.querySelector(".close");
   const msgElement = document.querySelector(".notifier h1");
 
+  //selecting 
+
   function handlePlayModeSelection(event) {
     playAgainstComputer = event.target.id === "cpu-mode";
     document.querySelector(".play-mode").style.display = "none";
